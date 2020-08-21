@@ -79,4 +79,11 @@ class AttackerStoryApplicationTests {
         this.mockMvc.perform(get("/customer/home"))
                 .andExpect(status().isOk());
     }
+
+    @Test
+    @WithUserDetails("henri@hacker.com")
+    public void adminHomepageWhenRoleUserThenForbidden() throws Exception {
+        this.mockMvc.perform(get("/admin/home"))
+                .andExpect(status().isForbidden());
+    }
 }
