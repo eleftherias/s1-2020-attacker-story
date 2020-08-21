@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-top: 50px;
+    bottom: 50px;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: initial;
+    float: right;
+}
